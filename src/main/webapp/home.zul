@@ -1,0 +1,128 @@
+<?page title="home" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="home" border="normal">
+
+		<grid>
+			<columns width="50%">
+				<column width="15%" label="" />
+				<!-- 		<column width = "20%" label=""/> -->
+				<column width="25%" label="" />
+
+			</columns>
+			<rows>
+				<row>
+					<label value="Periode" />
+					<combobox constraint="no empty : harus diisi" />
+					<label value="" />
+				</row>
+				<row>
+					<label value="Nama" />
+					<textbox constraint="no empty : harus diisi"
+						width="100%" />
+					<button id="searchButton" label=""
+						image="/imgs/search.png" />
+				</row>
+				<row>
+					<label value="NIK" />
+					<textbox constraint="no empty : harus diisi" />
+					<label value="" />
+				</row>
+				<row>
+					<label value="No. Rekening" />
+					<textbox constraint="no empty : harus diisi" />
+					<label value="" />
+				</row>
+			</rows>
+		</grid>
+		<zscript>
+			int i = 0
+		</zscript>
+		<groupbox closable="false" sclass="z-demo-config"
+			style="padding: 10px;">
+			<caption label="Detail Project"></caption>
+			<tabbox id="tbx1" hflex="1">
+
+				<tabs>
+					<tab>A</tab>
+					<tab>B</tab>
+					<tab>C</tab>
+				</tabs>
+				<tabpanels>
+					<tabpanel>
+						<grid>
+							<columns width="75%">
+								<column width="15%" label="" />
+								<column width="100%" label="" />
+							</columns>
+							<rows>
+								<row>
+									<label value="Transport" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<label value="Parkir" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<label value="Kesehatan" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<label value="BPJS" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<label value="Reward Monthly" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<label value="Reward Triwulan" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<label value="Taxi" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<label value="Lembur" />
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<textbox value="other1" width="100px"/>
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+								<row>
+									<textbox value="other2" width="100px"/>
+									<textbox width="25%"
+										constraint="no empty : harus diisi" />
+									<label value="" />
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel></tabpanel>
+					<tabpanel></tabpanel>
+				</tabpanels>
+			</tabbox>
+		</groupbox>
+
+	</window>
+</zk>
